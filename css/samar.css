@@ -118,14 +118,14 @@ a:hover span {
 
 .introduce .text {
     /* border: 3px solid #f8ae56; */
-    width: 60%;
+    width: 55%;
     display: flex;
     flex-direction: column;
 }
 
 .introduce .bigimg {
-    width: 40%;
-    background-size: auto;
+    /* width: 100%; */
+    object-fit: cover;
 }
 
 
@@ -568,7 +568,7 @@ a:hover span {
 }
 
 .latest .latest_in {
-    width: 65%;
+    width: 80%;
     margin: 0 auto;
     /* border: 1px solid red; */
     max-width: 1200px;
@@ -736,10 +736,10 @@ a:hover span {
 }
 
 .cost .container {
-    width: 65%;
+    width: 85%;
     /* border: 1px solid red; */
     margin: 0 auto;
-    padding: 30px 0 20px 0;
+    padding: 20px 0 20px 0;
     max-width: 1200px;
 }
 
@@ -771,7 +771,7 @@ a:hover span {
     background: white;
     text-align: center;
     width: 33.33%;
-    margin: 20px;
+    margin: 15px;
     border-radius: 10px;
     border: 3px solid transparent;
     transition: all 0.5s;
@@ -781,7 +781,7 @@ a:hover span {
 
 .cost .content .basic_plan h3 {
     font-size: 32px;
-    margin: 50px 0px 10px 0px;
+    margin: 20px 0px 10px 0px;
 }
 
 .cost .content .basic_plan span {
@@ -1010,17 +1010,28 @@ a:hover span {
 .swiper-slide-thumb-active .triangle::after {
     opacity: 1;
 }
+
 /* .swiper-container.testimonial-thumb{position: relative;} */
-.swiper-container .white_right{position: absolute;top: 0;right: 0;
-    background: linear-gradient(to left,#fff 0,rgba(255,255,255,0) 100%);
-    width: 20px;height: 100%;
-    z-index: 4; 
+.swiper-container .white_right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient(to left, #fff 0, rgba(255, 255, 255, 0) 100%);
+    width: 20px;
+    height: 100%;
+    z-index: 4;
 }
-.swiper-container .white_left{position: absolute;top: 0;left: 0;
-    background: linear-gradient(to right,#fff 0,rgba(255,255,255,0) 100%);
-    width: 20px;height: 100%;
-    z-index: 4; 
+
+.swiper-container .white_left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, #fff 0, rgba(255, 255, 255, 0) 100%);
+    width: 20px;
+    height: 100%;
+    z-index: 4;
 }
+
 .swiper-pagination-bullet-active {
     background-color: #f55f8d;
 }
@@ -1037,7 +1048,7 @@ a:hover span {
 
 .blog .blog_container {
     /* border: 1px solid red; */
-    width: 65%;
+    width: 85%;
     margin: 20px auto;
     max-width: 1200px;
     text-align: center;
@@ -1047,7 +1058,7 @@ a:hover span {
 .blog .title h3 {
     font-size: 22px;
     color: #f55f8d;
-    margin:50px 0 0 0;
+    margin: 50px 0 0 0;
 }
 
 .blog .title p {
@@ -1091,7 +1102,7 @@ a:hover span {
     width: 35%;
     font-size: 14px;
     color: white;
-    padding: 8px;
+    padding: 6px;
     background-image: linear-gradient(to right, #f55f8d 0, #f8ae56 51%, #f55f8d 100%);
     border-radius: 5px;
     position: absolute;
