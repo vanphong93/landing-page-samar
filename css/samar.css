@@ -19,7 +19,6 @@ header {
 .header_container {
     display: flex;
     justify-content: space-between;
-    /* width: 65%; */
     margin: auto;
     align-items: center;
     padding-top: 20px;
@@ -99,25 +98,23 @@ a:hover span {
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 1;
-    background-position: center;
     overflow: hidden;
     width: 100%;
+
 }
 
 .introduce .container {
-    /* width: 65%; */
     display: flex;
     margin: 0 auto;
     align-items: center;
-    /* border: 5px solid red; */
-    padding-top: 150px;
+    padding-top: 130px;
     /* height: 700px; */
     max-width: 1200px;
-
+    margin-bottom: 50px;
 }
 
 .introduce .text {
-    /* border: 3px solid #f8ae56; */
+
     width: 55%;
     display: flex;
     flex-direction: column;
@@ -133,7 +130,6 @@ a:hover span {
     font-size: 65px;
     color: black;
     line-height: 80px;
-    /* border: 2px solid rgb(20, 18, 153); */
     margin: 10px 0px 40px 0px;
 }
 
@@ -209,15 +205,12 @@ a:hover span {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    /* border: 3px solid red; */
     width: 100%;
     margin: 30px 0;
 
 }
 
 .digital .text_content {
-    /* width: 65%; */
-    /* border: 3px solid black; */
     margin: 0 auto;
     max-width: 1200px;
 }
@@ -234,7 +227,6 @@ a:hover span {
     text-align: center;
     font-size: 70px;
     color: black;
-    /* border: 2px solid red; */
     margin: 0px;
 }
 
@@ -246,7 +238,6 @@ a:hover span {
 
 .digital .text_content .content .inside {
     background-color: rgb(255, 255, 255);
-    /* border: 3px solid rgba(255, 0, 0, 0); */
     border: none;
     margin: auto;
     border-radius: 20px;
@@ -287,8 +278,6 @@ a:hover span {
 }
 
 .about .detail {
-    /* width: 70%; */
-    /* border: 2px solid red; */
     margin: 80px auto;
     display: flex;
     max-width: 1200px;
@@ -297,7 +286,6 @@ a:hover span {
 
 .about .detail .left img {
     width: 100%;
-    /* background-size: cover; */
     border-radius: 0 100px 100px 0;
     margin-top: 120px;
 }
@@ -373,19 +361,18 @@ a:hover span {
     background-image: url(../image/bg14.png);
     background-repeat: no-repeat;
     background-position: center;
-    /* width: 65%; */
     margin: 0 auto;
     text-align: center;
     display: flex;
     flex-direction: row;
     justify-items: center;
-    padding: 60px 0;
+    padding: 50px 0;
     max-width: 1200px;
 }
 
 .counter_number h2 {
     font-size: 65px;
-    margin: 0px 0;
+    margin: 15px 0 0 0;
     color: #f55f8d;
 }
 
@@ -397,10 +384,9 @@ a:hover span {
 
 .counter_number i {
     color: white;
-    width: 70px;
-    height: 70px;
-    font-size: 60px;
-    line-height: 70px;
+    padding: 15px;
+    font-size: 40px;
+    line-height: 40px;
     border-radius: 50%;
     background-image: linear-gradient(to right, #f55f8d 0, #f8ae56 51%, #f55f8d 100%);
 }
@@ -419,9 +405,6 @@ a:hover span {
 }
 
 .feature .inside {
-    /* width: 65%; */
-    /* height: 90vh; */
-    /* border: 1px solid red; */
     margin: 0 auto;
     display: flex;
     justify-items: center;
@@ -430,13 +413,11 @@ a:hover span {
 
 .feature .left {
     width: 50%;
-    /* border: 1px solid blue; */
     display: flex;
 }
 
 .feature .left .text {
     height: 25%;
-    /* border: 1px solid green; */
 }
 
 .feature .left h3 {
@@ -453,7 +434,6 @@ a:hover span {
 }
 
 .feature .left .content {
-    /* border: 1px solid red; */
     display: flex;
     flex-direction: row;
     background-color: rgb(255, 255, 255);
@@ -461,7 +441,6 @@ a:hover span {
     box-shadow: 0 0 60px 0 rgba(0, 0, 0, .1);
     border-radius: 20px;
     padding: 10px;
-    /* justify-items: center; */
     margin-right: 30px;
     position: relative;
     transition: 1s;
@@ -498,15 +477,15 @@ a:hover span {
 }
 
 .feature .left .content .content_img i {
-    font-size: 120px;
+    font-size: 75px;
     color: #f55f8d;
     position: relative;
     z-index: 1;
+    margin-left: 20px;
 }
 
 .feature .left .content .content_text {
     width: 75%;
-    /* border: 1px solid blue; */
 }
 
 .feature .left .content p {
@@ -541,7 +520,7 @@ a:hover span {
     left: 0;
     opacity: 0;
     transition: all 1s;
-    /* z-index: 1; */
+
 }
 
 .feature .left .content:hover::after {
@@ -565,12 +544,13 @@ a:hover span {
     background-repeat: no-repeat;
     width: 100%;
     overflow: hidden;
+    margin-bottom: 70px;
 }
 
 .latest .latest_in {
     width: 80%;
     margin: 0 auto;
-    /* border: 1px solid red; */
+
     max-width: 1200px;
     position: relative;
     z-index: 5;
@@ -737,7 +717,6 @@ a:hover span {
 
 .cost .container {
     width: 85%;
-    /* border: 1px solid red; */
     margin: 0 auto;
     padding: 20px 0 20px 0;
     max-width: 1200px;
@@ -756,15 +735,14 @@ a:hover span {
 .cost .container .title h3 {
     color: #f55f8d;
     font-size: 22px;
+    margin: 0 0;
 }
 
 .cost .content {
-    /* border: 1px solid red; */
+
     display: flex;
     color: #000000;
     font-size: 18px;
-    /* justify-content: center; */
-    /* justify-items: center; */
 }
 
 .cost .content .basic_plan {
@@ -849,13 +827,11 @@ a:hover span {
     background-image: url(../image/bg17.png);
     background-size: cover;
     background-position: center;
-    /* height: 50vh; */
 }
 
 /* start Testimonial */
 .say .container {
     width: 65%;
-    /* border: 1px solid red; */
     text-align: center;
     margin: 0 auto;
     max-width: 1200px;
@@ -920,7 +896,6 @@ a:hover span {
 
 .testimonial-text {
     padding: 30px;
-    /* text-align: center; */
     box-shadow: 0 10px 10px 0 rgb(0 0 0 / 10%);
     margin: 20px auto;
     border-radius: 10px;
@@ -947,8 +922,9 @@ a:hover span {
     position: absolute;
     left: 20%;
     text-align: left;
-    font-size: 120px;
+    font-size: 90px;
     color: #f55f8d;
+    transform: rotate(-180deg);
 }
 
 .swiper-slide .symbol img {
@@ -1011,7 +987,6 @@ a:hover span {
     opacity: 1;
 }
 
-/* .swiper-container.testimonial-thumb{position: relative;} */
 .swiper-container .white_right {
     position: absolute;
     top: 0;
@@ -1036,7 +1011,6 @@ a:hover span {
     background-color: #f55f8d;
 }
 
-/* .container .slide .swiper-container {border: 1px solid red;} */
 /* start blog */
 .blog {
     background-image: url(../image/bg16.png);
@@ -1047,7 +1021,6 @@ a:hover span {
 }
 
 .blog .blog_container {
-    /* border: 1px solid red; */
     width: 85%;
     margin: 20px auto;
     max-width: 1200px;
@@ -1152,7 +1125,7 @@ a:hover span {
 footer {
     background-image: url(../image/pattern2.png);
     background-size: contain;
-    height: 700px;
+    height: 600px;
     background-repeat: no-repeat;
     background-color: rgba(14, 27, 31, 255);
     width: 100%;
@@ -1161,7 +1134,7 @@ footer {
 
 footer .background {
     background-image: url(../image/bg4.png);
-    height: 700px;
+    height: 600px;
     background-position: center;
     position: absolute;
     width: 100%;
@@ -1171,10 +1144,6 @@ footer .background {
 footer .container {
     width: 65%;
     position: relative;
-    /* border: 1px solid red; */
-    /* position:absolute; */
-    /* left: auto;
-    top: 40px; */
 }
 
 footer form {
@@ -1264,7 +1233,6 @@ footer .container .input_button button:hover i {
 }
 
 footer .information {
-    /* border: 1px solid rgb(4, 0, 255); */
     width: 100%;
     margin: 20px auto;
     display: flex;
@@ -1274,9 +1242,8 @@ footer .information {
 }
 
 .information .links {
-    width: 25%;
+    width: 23%;
     height: 300px;
-    /* border: 1px solid red; */
     color: white;
 }
 
@@ -1352,7 +1319,7 @@ footer .information {
 }
 
 .end_back .copy_symbol {
-    width: 65%;
+    width: 85%;
     height: 60px;
     margin: 0 auto;
     display: flex;
