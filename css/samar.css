@@ -1,13 +1,13 @@
 body,
 html {
     color: #636363;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 400;
     line-height: 1.6;
     margin: 0 0;
     padding: 0 0;
     box-sizing: border-box;
-
+    overflow-x: hidden;
 }
 
 /* start header */
@@ -24,8 +24,8 @@ header {
     padding-top: 20px;
     max-width: 1200px;
     background-color: transparent;
-    z-index: 5;
-
+    /* z-index: 5; */
+    height: 100px;
 }
 
 .header_container li {
@@ -78,7 +78,12 @@ a:hover span {
     border-radius: 30px;
     font-size: 15px;
     border: none;
-    background-image: linear-gradient(to right, #f55f8d 0, #f8ae56 51%, #f55f8d 100%);
+    background-image: linear-gradient(
+        to right,
+        #f55f8d 0,
+        #f8ae56 51%,
+        #f55f8d 100%
+    );
     transition: 0.5s;
     background-size: 200%;
     cursor: pointer;
@@ -87,9 +92,7 @@ a:hover span {
 .header_container button:hover,
 .introduce button:hover {
     background-position: right center;
-
 }
-
 
 /* header end  */
 /* start introduce -big image*/
@@ -100,7 +103,6 @@ a:hover span {
     z-index: 1;
     overflow: hidden;
     width: 100%;
-
 }
 
 .introduce .container {
@@ -114,7 +116,6 @@ a:hover span {
 }
 
 .introduce .text {
-
     width: 55%;
     display: flex;
     flex-direction: column;
@@ -124,7 +125,6 @@ a:hover span {
     /* width: 100%; */
     object-fit: cover;
 }
-
 
 .introduce h2 {
     font-size: 65px;
@@ -138,7 +138,6 @@ a:hover span {
     color: #f55f8d;
     font-weight: bold;
     display: inline-block;
-
 }
 
 .introduce span:nth-child(2) {
@@ -158,7 +157,7 @@ a:hover span {
     color: white;
     border-radius: 50%;
     margin: 8px 5px;
-    background-image: linear-gradient(#f55f8d 0, #f8ae56 51%, #f55f8d 100%)
+    background-image: linear-gradient(#f55f8d 0, #f8ae56 51%, #f55f8d 100%);
 }
 
 .introduce button {
@@ -169,7 +168,12 @@ a:hover span {
     border-radius: 30px;
     font-size: 15px;
     border: none;
-    background-image: linear-gradient(to right, #f55f8d 0, #f8ae56 51%, #f55f8d 100%);
+    background-image: linear-gradient(
+        to right,
+        #f55f8d 0,
+        #f8ae56 51%,
+        #f55f8d 100%
+    );
     transition: 0.5s;
     background-size: 200%;
     cursor: pointer;
@@ -207,7 +211,6 @@ a:hover span {
     background-position: center;
     width: 100%;
     margin: 30px 0;
-
 }
 
 .digital .text_content {
@@ -246,7 +249,7 @@ a:hover span {
     width: 30%;
     transform: translateY(30px);
     transition: all 0.5s;
-    box-shadow: 0 0 60px 0 rgba(0, 0, 0, .1);
+    box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.1);
 }
 
 .digital .text_content img {
@@ -281,7 +284,6 @@ a:hover span {
     margin: 80px auto;
     display: flex;
     max-width: 1200px;
-
 }
 
 .about .detail .left img {
@@ -347,7 +349,12 @@ a:hover span {
     border-radius: 30px;
     font-size: 15px;
     border: none;
-    background-image: linear-gradient(to right, #f55f8d 0, #f8ae56 51%, #f55f8d 100%);
+    background-image: linear-gradient(
+        to right,
+        #f55f8d 0,
+        #f8ae56 51%,
+        #f55f8d 100%
+    );
     transition: 0.5s;
     background-size: 200%;
     cursor: pointer;
@@ -388,7 +395,12 @@ a:hover span {
     font-size: 40px;
     line-height: 40px;
     border-radius: 50%;
-    background-image: linear-gradient(to right, #f55f8d 0, #f8ae56 51%, #f55f8d 100%);
+    background-image: linear-gradient(
+        to right,
+        #f55f8d 0,
+        #f8ae56 51%,
+        #f55f8d 100%
+    );
 }
 
 .counter_number .item {
@@ -438,7 +450,7 @@ a:hover span {
     flex-direction: row;
     background-color: rgb(255, 255, 255);
     margin: 30px 0px;
-    box-shadow: 0 0 60px 0 rgba(0, 0, 0, .1);
+    box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     padding: 10px;
     margin-right: 30px;
@@ -454,15 +466,15 @@ a:hover span {
 
 @keyframes move2 {
     0% {
-        transform: rotate(1deg) translate(2px, 2px)
+        transform: rotate(1deg) translate(2px, 2px);
     }
 
     50% {
-        transform: rotate(-1deg) translate(-2px, -2px)
+        transform: rotate(-1deg) translate(-2px, -2px);
     }
 
     100% {
-        transform: rotate(1deg) translate(2px, 2px)
+        transform: rotate(1deg) translate(2px, 2px);
     }
 }
 
@@ -509,10 +521,12 @@ a:hover span {
     content: "";
     position: absolute;
     border-radius: 20px;
-    background-image: linear-gradient(to right,
-            #f55f8d 0,
-            #f8ae56 51%,
-            #f55f8d 100%);
+    background-image: linear-gradient(
+        to right,
+        #f55f8d 0,
+        #f8ae56 51%,
+        #f55f8d 100%
+    );
     background-size: 200%;
     width: 100%;
     height: 100%;
@@ -520,7 +534,6 @@ a:hover span {
     left: 0;
     opacity: 0;
     transition: all 1s;
-
 }
 
 .feature .left .content:hover::after {
@@ -577,7 +590,7 @@ a:hover span {
     grid-template-columns: 1fr 1fr 1.5fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: 30px;
-    height: 1000px;
+    /* height: 1000px; */
     max-width: 1200px;
     margin: auto;
 }
@@ -585,7 +598,6 @@ a:hover span {
 .latest .table .img_item {
     position: relative;
     overflow: hidden;
-
 }
 
 .latest .table .img_item:first-child {
@@ -623,10 +635,9 @@ a:hover span {
     left: 0;
     width: 100%;
     height: 100%;
-    transition: all .8s;
+    transition: all 0.8s;
     opacity: 0;
     border-radius: 20px;
-
 }
 
 .latest .table .overlay .text {
@@ -636,7 +647,7 @@ a:hover span {
     left: 30px;
     color: rgb(255, 255, 255);
     transform: translateY(20px);
-    transition: all .8s;
+    transition: all 0.8s;
     opacity: 0;
     z-index: 1;
 }
@@ -666,7 +677,7 @@ a:hover span {
     border-radius: 8px;
     background: linear-gradient(to right, #f55f8d 0, #f8ae56 51%, #f55f8d 100%);
     transform: translate(20px, -20px);
-    transition: all .8s;
+    transition: all 0.8s;
     opacity: 0;
     cursor: pointer;
     z-index: 1;
@@ -692,16 +703,18 @@ a:hover span {
     position: absolute;
     top: 0;
     left: -100%;
-    background: linear-gradient(to right,
-            rgba(255, 255, 255, 0) 0%,
-            rgba(255, 255, 255, 0.3) 100%);
+    background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.3) 100%
+    );
     display: block;
     transform: skewX(-20deg);
     transition: all 0.8s;
 }
 
 .latest .table .img_item:hover .gradient {
-    left: 125%
+    left: 125%;
 }
 
 /* start cost */
@@ -712,7 +725,6 @@ a:hover span {
     background-repeat: no-repeat;
     width: 100%;
     overflow: hidden;
-
 }
 
 .cost .container {
@@ -739,7 +751,6 @@ a:hover span {
 }
 
 .cost .content {
-
     display: flex;
     color: #000000;
     font-size: 18px;
@@ -754,7 +765,7 @@ a:hover span {
     border: 3px solid transparent;
     transition: all 0.5s;
     border-image: 100 round;
-    box-shadow: 1px 0 50px rgb(0, 0, 0, .1);
+    box-shadow: 1px 0 50px rgb(0, 0, 0, 0.1);
 }
 
 .cost .content .basic_plan h3 {
@@ -763,7 +774,7 @@ a:hover span {
 }
 
 .cost .content .basic_plan span {
-    color: #f8AE56;
+    color: #f8ae56;
     font-size: 50px;
     font-weight: bold;
     line-height: 10px;
@@ -809,7 +820,12 @@ a:hover span {
     border-radius: 30px;
     font-size: 15px;
     border: none;
-    background-image: linear-gradient(to right, #f55f8d 0, #f8ae56 51%, #f55f8d 100%);
+    background-image: linear-gradient(
+        to right,
+        #f55f8d 0,
+        #f8ae56 51%,
+        #f55f8d 100%
+    );
     transition: 0.5s;
     background-size: 200%;
     cursor: pointer;
@@ -859,7 +875,7 @@ a:hover span {
     padding: 20px 0;
 }
 
-.testimonial-thumbs .testimonial-pic>img {
+.testimonial-thumbs .testimonial-pic > img {
     width: 80px;
     height: 80px;
     border-radius: 100%;
@@ -1025,7 +1041,6 @@ a:hover span {
     margin: 20px auto;
     max-width: 1200px;
     text-align: center;
-
 }
 
 .blog .title h3 {
@@ -1062,7 +1077,6 @@ a:hover span {
 .blog .swiper-slide .img_up img {
     height: 100%;
     width: 100%;
-
 }
 
 .blog .swiper-slide .img_up {
@@ -1076,7 +1090,12 @@ a:hover span {
     font-size: 14px;
     color: white;
     padding: 6px;
-    background-image: linear-gradient(to right, #f55f8d 0, #f8ae56 51%, #f55f8d 100%);
+    background-image: linear-gradient(
+        to right,
+        #f55f8d 0,
+        #f8ae56 51%,
+        #f55f8d 100%
+    );
     border-radius: 5px;
     position: absolute;
     left: 5%;
@@ -1091,7 +1110,7 @@ a:hover span {
     margin-bottom: 0;
 }
 
-.blog .swiper-slide p:first-of-type>span {
+.blog .swiper-slide p:first-of-type > span {
     font-weight: bold;
     font-size: 24px;
     color: black;
@@ -1113,7 +1132,6 @@ a:hover span {
     border-radius: 50%;
     color: #f55f8d;
     margin: 0 5px 0 15px;
-
 }
 
 .blog .swiper-slide .author span {
@@ -1202,7 +1220,12 @@ footer .container .input_button button {
     border: none;
     border-radius: 0 10px 10px 0;
     font-size: 15px;
-    background-image: linear-gradient(to right, #f55f8d 0, #f8ae56 51%, #f55f8d 100%);
+    background-image: linear-gradient(
+        to right,
+        #f55f8d 0,
+        #f8ae56 51%,
+        #f55f8d 100%
+    );
     transition: 0.5s;
     background-size: 200%;
     cursor: pointer;
@@ -1238,7 +1261,6 @@ footer .information {
     display: flex;
     flex-direction: row;
     margin-top: 80px;
-
 }
 
 .information .links {
@@ -1255,7 +1277,12 @@ footer .information {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-image: linear-gradient(to right, #f55f8d 0, #f8ae56 51%, #f55f8d 100%);
+    background-image: linear-gradient(
+        to right,
+        #f55f8d 0,
+        #f8ae56 51%,
+        #f55f8d 100%
+    );
     text-align: center;
     line-height: 40px;
     margin: 0 5px 0 0;
@@ -1274,7 +1301,12 @@ footer .information {
     width: 20px;
     height: 4px;
     display: inline-block;
-    background-image: linear-gradient(to right, #f55f8d 0, #f8ae56 51%, #f55f8d 100%);
+    background-image: linear-gradient(
+        to right,
+        #f55f8d 0,
+        #f8ae56 51%,
+        #f55f8d 100%
+    );
     border-radius: 2px;
     margin: 0 0;
 }
@@ -1284,7 +1316,12 @@ footer .information {
     height: 4px;
     display: inline-block;
     margin-left: 5px;
-    background-image: linear-gradient(to right, #f55f8d 0, #f8ae56 51%, #f55f8d 100%);
+    background-image: linear-gradient(
+        to right,
+        #f55f8d 0,
+        #f8ae56 51%,
+        #f55f8d 100%
+    );
     border-radius: 2px;
 }
 
@@ -1344,7 +1381,7 @@ footer .information {
     line-height: 40px;
     text-align: center;
     color: white;
-    background-color: rgba(255, 255, 255, .1);
+    background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     transition: all 0.5s;
 }
@@ -1363,7 +1400,6 @@ footer .information {
     bottom: 20px;
     right: 20px;
     position: fixed;
-
 }
 
 .end_back .back_top i {
@@ -1380,4 +1416,196 @@ footer .information {
     visibility: visible;
     opacity: 1;
     transition: all 1s;
+}
+/* menubar open and close */
+.none {
+    display: none;
+}
+
+.changeBar {
+    transform: translateX(110%);
+}
+
+.closeBar,
+.openBar {
+    position: absolute;
+    top: 50%;
+    right: 1%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 2;
+}
+
+.btn_navbar i {
+    width: 50px;
+    height: 50px;
+    background-color: #f55f8d;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 2px;
+    color: rgb(24, 22, 22);
+}
+/* drop down link */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    text-decoration: none;
+    display: block;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+    background-color: bisque;
+    border-radius: 10px;
+}
+.links button {
+    width: 80px;
+    margin: 5px 0;
+    padding: 5px;
+    color: white;
+    border-radius: 30px;
+    font-size: 15px;
+    border: none;
+    background-image: linear-gradient(
+        to right,
+        #f55f8d 0,
+        #f8ae56 51%,
+        #f55f8d 100%
+    );
+    transition: 0.5s;
+    background-size: 200%;
+    cursor: pointer;
+}
+.links.hidden {
+    display: none;
+}
+/* media responsive */
+@media screen and (max-width: 1024px) {
+    .header_container li {
+        display: flex;
+        margin: 5px 0 5px 0;
+    }
+    #navbarSupportedContent {
+        margin-top: 200px;
+        z-index: 1;
+    }
+    footer .container span {
+        text-align: center;
+        display: block;
+        margin: 5px auto;
+    }
+    footer form {
+        padding: 20px 10px;
+        display: block;
+    }
+    footer .container .input_button {
+        justify-content: center;
+        margin: auto;
+    }
+    .feature .left h1 {
+        font-size: 60px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .introduce .container {
+        display: block;
+    }
+    .introduce .text {
+        width: auto;
+    }
+    .introduce h2 {
+        font-size: 50px;
+    }
+    .digital .text_content .content {
+        display: block;
+    }
+    .digital .text h1 {
+        font-size: 50px;
+    }
+    .feature .left h1 {
+        font-size: 50px;
+    }
+    .digital .text_content .content .inside {
+        width: 80%;
+        margin-top: 10px;
+        padding: 10px 0 10px 0;
+        transform: translateY(30px);
+        transition: all 0.5s;
+    }
+    .about .detail .right h1 {
+        font-size: 50px;
+    }
+    .about .detail {
+        display: block;
+    }
+    .about .detail .left {
+        width: 100%;
+    }
+    .about .detail .right {
+        width: auto;
+    }
+    .about .detail .left img {
+        margin-top: 10px;
+    }
+    .feature .inside {
+        display: block;
+    }
+    .feature .left {
+        width: auto;
+    }
+    .feature .right {
+        width: 100%;
+    }
+    .feature .left h1 {
+        font-size: 50px;
+    }
+    .latest .text h1 {
+        font-size: 50px;
+    }
+    .latest .table {
+        display: block;
+    }
+    .cost .container .title h1 {
+        font-size: 50px;
+    }
+    .cost .content {
+        flex-wrap: wrap;
+    }
+    .cost .content .basic_plan {
+        width: 100%;
+    }
+    .say .container .title p {
+        font-size: 50px;
+    }
+    .swiper-slide .symbol {
+        font-size: 70px;
+    }
+    .blog .title p {
+        font-size: 50px;
+    }
+    .information .links {
+        display: none;
+    }
+    .links.hidden {
+        display: block;
+    }
+    .information .links_samar li {
+        margin: 5px 0;
+    }
+    footer .information {
+        justify-content: space-between;
+    }
+    .end_back .copy_symbol {
+        width: 100%;
+        padding: 10px;
+        /* height: 80px; */
+        display: block;
+    }
+    .information .links li {
+        margin: 0px 0;
+    }
 }
