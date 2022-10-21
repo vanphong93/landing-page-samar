@@ -38,7 +38,11 @@
     <header>
         <div class="header_container">
             <div class="logo"><a href="#"><img src="./image/logo-2.png" alt="logo-2"></a></div>
-            <nav>
+            <div class="btn_navbar">
+                <i id="open" class="openBar fa fa-bars none"></i>
+                <i id="closer" class="closeBar fa fa-times none"></i>
+              </div>
+            <nav id="navbarSupportedContent">
                 <ul>
                     <li><a href="#"><span>Home</span><i class="fa fa-chevron-down"></i></a></li>
                     <li><a href="#"><span>Pages</span><i class="fa fa-chevron-down"></i></a></li>
@@ -430,7 +434,7 @@
                     <h3>Our Blog</h3>
                     <p>Latest News & Blog</p>
                 </div>
-                <div class="swiper mySwiper">
+                <div id="blog_swiper" class="swiper mySwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="img_up">
@@ -522,6 +526,41 @@
                         <li><a href="#"><i class="las la-angle-right"></i> Terms & Conditions</a></li>
                         <li><a href="#"><i class="las la-angle-right"></i> Support</a></li>
                     </div>
+                    <div class="links hidden">
+                        <p>Links</p>
+                        <h4></h4>
+                        <h4></h4>
+                      <section class="dropdown">
+                        <button class="dropbtn">Our</button>
+                        <div class="dropdown-content">
+                            <li><a href="#"><i class="las la-angle-right"></i> Home</a></li>
+                        <li><a href="#"><i class="las la-angle-right"></i> About</a></li>
+                        <li><a href="#"><i class="las la-angle-right"></i> Services</a></li>
+                        <li><a href="#"><i class="las la-angle-right"></i> Team</a></li>
+                        <li><a href="#"><i class="las la-angle-right"></i> Blog</a></li>
+                    </div>
+                      </section>
+                      <section class="dropdown">
+                        <button class="dropbtn">Services</button>
+                        <div class="dropdown-content">
+                            <li><a href="#"><i class="las la-angle-right"></i> Strategy & Research</a></li>
+                        <li><a href="#"><i class="las la-angle-right"></i> Web Development</a></li>
+                        <li><a href="#"><i class="las la-angle-right"></i> Web Solution</a></li>
+                        <li><a href="#"><i class="las la-angle-right"></i> Digital Marketing</a></li>
+                        <li><a href="#"><i class="las la-angle-right"></i> App Design</a></li>
+                    </div>
+                      </section>
+                      <section class="dropdown">
+                        <button class="dropbtn">Other</button>
+                        <div class="dropdown-content">
+                            <li><a href="#"><i class="las la-angle-right"></i> FAQ</a></li>
+                        <li><a href="#"><i class="las la-angle-right"></i> Portfolio</a></li>
+                        <li><a href="#"><i class="las la-angle-right"></i> Privacy Policy</a></li>
+                        <li><a href="#"><i class="las la-angle-right"></i> Terms & Conditions</a></li>
+                        <li><a href="#"><i class="las la-angle-right"></i> Support</a></li>
+                    </div>
+                      </section>
+                    </div>
                 </div>
             </div>
         </footer>
@@ -584,20 +623,30 @@
                 actualSize: false,
                 exThumbImage: "data-exthumbimage"
             });</script>
-        <!-- swiper our blog -->
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+       <!-- swiper our blog -->
+ <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+ 
+ <script>
+         const swiper = new Swiper(".mySwiper", {
+             slidesPerView: 1,
+             spaceBetween: 30,
+             slidesPerGroup: 1,
+             loop: true,
+             breakpoints:{
+                1024:{
+                    slidesPerView:3
+                },
+768:{
+    slidesPerView:2
+}
+             }
+         });
+        
+ </script>
 
-        <script>
-            var swiper = new Swiper(".mySwiper", {
-                slidesPerView: 3,
-                spaceBetween: 30,
-                slidesPerGroup: 1,
-                loop: true,
-            });
-        </script>
         <!-- swiper  testimonial-->
         <script src="https://samar.dexignzone.com/xhtml/vendor/swiper/js/swiper.min.js"></script>
-        <script>var testimonialThumbs = new Swiper(".testimonial-thumbs", {
+        <script>const testimonialThumbs = new Swiper(".testimonial-thumbs", {
                 spaceBetween: 10,
                 slidesPerView: 3,
                 centeredSlides: true,
@@ -606,7 +655,7 @@
                 loop: true,
                 speed: 1500
             });
-            var testimonialContent = new Swiper(".testimonial-comment", {
+            const testimonialContent = new Swiper(".testimonial-comment", {
                 spaceBetween: 10,
                 autoplay: true,
                 loop: true,
@@ -619,12 +668,53 @@
                     clickable: true
                 }
             });</script>
-        <!-- carousel -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"
-            integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+    //open menu and close menu
+
+const navBar = document.getElementById("navbarSupportedContent");
+const openBar = document.getElementById("open");
+const closeBar = document.getElementById("closer");
+
+function windowResize(breakpoint) {
+
+  // If media query matches
+  if (breakpoint.matches) {
+    navBar.classList.add("changeBar");
+    openBar.classList.remove("none");
+    closeBar.classList.add("none");
+
+  } else {
+// x.classList.remove("sizeSwiper")
+    navBar.classList.remove("changeBar");
+    openBar.classList.add("none");
+    closeBar.classList.add("none");
+  }
+}
+const breakpoint = window.matchMedia("(max-width:1024px)")
+// Call listener function at run time
+windowResize(breakpoint);
+// Attach listener function on state changes
+breakpoint.addEventListener("change", () => {
+//   console.log(breakpoint)
+  windowResize(breakpoint);
+ 
+});
+
+openBar.addEventListener("click", function () {
+  navBar.classList.remove("changeBar");
+  closeBar.classList.remove("none");
+  openBar.classList.add("none");
+});
+closeBar.addEventListener("click", function () {
+  navBar.classList.add("changeBar");
+  openBar.classList.remove("none");
+  closeBar.classList.add("none");
+});
 
 
+</script>
+ 
 
 </body>
 
