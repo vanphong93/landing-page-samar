@@ -36,6 +36,10 @@ body.dark {
     --bg-linear-right: 0;
     --box-shadow-testtimonial: 0 10px 10px 0 rgba(255, 255, 255, 0.1);
     --logo: url(./../image/logo-white.png);
+    
+}
+body.dark img {
+    filter: brightness(.8) contrast(1.2);
 }
 /* start header */
 header {

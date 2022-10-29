@@ -74,8 +74,17 @@ closeBar.addEventListener("click", function () {
     openBar.classList.remove("none");
     closeBar.classList.add("none");
 });
+const currentTheme = localStorage.getItem("theme");
+
+if (currentTheme == "dark") {
+    document.getElementById("body").classList.toggle("dark");
+}
 
 document.getElementById("changeTheme").onclick = () => {
-
     document.getElementById("body").classList.toggle("dark");
+    if (currentTheme == "dark") {
+        localStorage.removeItem("theme");
+    } else {
+        localStorage.setItem("theme", "dark");
+    }
 };
