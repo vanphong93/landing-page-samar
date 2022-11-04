@@ -25,8 +25,7 @@
 - [Swiper](https://swiperjs.com/)
 - [Lightgallery](https://www.lightgalleryjs.com/)
 - [Counter-up](https://github.com/bfintal/Counter-Up)
-##Decription
-- Team of 3 people create template based website.
+
 ## Todo
 
 - Create a website based on a template.
