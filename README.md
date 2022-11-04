@@ -18,14 +18,15 @@
 </div>
 
 
-## Third Party libraries used except for HTML and CSS
+## Third Party plugin used except for HTML and CSS
 
 - [Amimate](https://animate.style/)
 - [Wow](https://wowjs.uk/)
 - [Swiper](https://swiperjs.com/)
 - [Lightgallery](https://www.lightgalleryjs.com/)
 - [Counter-up](https://github.com/bfintal/Counter-Up)
-
+##Decription
+- Team of 3 people create template based website.
 ## Todo
 
 - Create a website based on a template.
