@@ -1,5 +1,5 @@
 <div align="center">
-  <a href="http://netflix-clone-with-tmdb-using-react-mui.vercel.app/">
+  <a href="https://my-project-samar.vercel.app/">
     <img src="./image/logo-white.png" alt="Logo" width="100" height="32">
   </a>
   <p align="center">
@@ -29,4 +29,4 @@
 ## Todo
 
 - Create a website based on a template.
--Add dark theme and responsive web.
+- Add dark theme and responsive web.
