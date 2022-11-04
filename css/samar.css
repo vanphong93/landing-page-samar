@@ -1,7 +1,8 @@
 body,
 html {
     --text-gray: #636363;
-    --text-black: black;
+    --text-footer:#a8a29e;
+    --text-black: rgb(0, 0, 0);
     --bg-white: white;
     --box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.1);
     --bg-linear-left: linear-gradient(
@@ -91,7 +92,6 @@ a:hover span {
     animation: upToDown 0.3s;
     color: #f55f8d;
 }
-
 @keyframes upToDown {
     49% {
         transform: translateY(100%);
@@ -106,7 +106,6 @@ a:hover span {
         opacity: 1;
     }
 }
-
 .header_container button {
     width: 150px;
     margin-left: 20px;
@@ -147,11 +146,9 @@ a:hover span {
     margin: 0 auto;
     align-items: center;
     padding-top: 130px;
-    /* height: 700px; */
     max-width: 1200px;
     margin-bottom: 50px;
 }
-
 .introduce .text {
     width: 55%;
     display: flex;
@@ -159,7 +156,6 @@ a:hover span {
 }
 
 .introduce .bigimg {
-    /* width: 100%; */
     object-fit: cover;
 }
 
@@ -599,7 +595,6 @@ a:hover span {
 .latest .latest_in {
     width: 80%;
     margin: 0 auto;
-
     max-width: 1200px;
     position: relative;
     z-index: 5;
@@ -1293,7 +1288,6 @@ footer .container .input_button button:hover i {
 
 footer .information {
     width: 100%;
-    margin: 20px auto;
     display: flex;
     flex-direction: row;
     margin-top: 80px;
@@ -1374,7 +1368,7 @@ footer .information {
 
 .information .links a {
     text-decoration: none;
-    color: var(--text-gray);
+    color: var(--text-footer);
     transition: all 0.5s;
 }
 
@@ -1436,6 +1430,7 @@ footer .information {
     bottom: 20px;
     right: 20px;
     position: fixed;
+    z-index: 2;
 }
 
 .end_back .back_top i {
@@ -1634,6 +1629,7 @@ footer .information {
     }
     footer .information {
         justify-content: space-between;
+        margin: 10px 0 30px 0;
     }
     .end_back .copy_symbol {
         width: 100%;

@@ -1,5 +1,0 @@
-https://my-project-samar.vercel.app/
-Bài tập thực hành code web samar bằng HTML5 và CSS3.
-Thank bạn đã ghé thăm trang web !
-
-Link mẫu https://cybersamar.vercel.app/
